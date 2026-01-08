@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_ACTUAL_API_KEY_HERE'; 
+const API_KEY = 'bcfe7b7ae55a413ea20d3ef934b473ce'; 
 const BASE_URL = 'https://newsapi.org/v2/top-headlines';
 
 const buttons = document.querySelectorAll('.cat-btn');
