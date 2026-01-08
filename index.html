@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">News<span>Aggregator</span></a>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search news...">
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container categories">
+            <button class="cat-btn active" data-category="general">General</button>
+            <button class="cat-btn" data-category="business">Business</button>
+            <button class="cat-btn" data-category="technology">Technology</button>
+            <button class="cat-btn" data-category="science">Science</button>
+            <button class="cat-btn" data-category="sports">Sports</button>
+            <button class="cat-btn" data-category="health">Health</button>
+            <button class="cat-btn" data-category="entertainment">Entertainment</button>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading news...</p>
+            </div>
+
+            <div id="error" class="error">Failed to load news. Please try again later.</div>
+
+            <div id="news-grid" class="news-grid"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 News Aggregator. Powered by News API.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
